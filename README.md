@@ -10,3 +10,9 @@ this did about alpha.2 ... i not understand how appear w600 in listing ... i dow
 also a good tutorial https://www.sigmdel.ca/michel/ha/w600/first_look_w600_en.html
 
 vshymanskyy  Firmware upload tool for Winner Micro W600 & W601 WiFi  https://github.com/vshymanskyy/w600tool
+
+
+https://docs.micropython.org/en/v1.8.2/esp8266/esp8266/tutorial/filesystem.html
+        >>> import os
+        >>> os.listdir()
+        ['sys', 'lib', 'cert', 'boot.py', 'main.py', 'easyw600.py']
