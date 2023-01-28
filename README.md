@@ -14,6 +14,14 @@
         220-= welcome on W600 FTP server =-
         220
         
+        or...
+        
+        install https://filezilla-project.org/download.php?type=client
+        and connect at 192.168.43.1 user 12345678
+        and will see all files and folders from w600-pico
+        Keep in mind ... is a local connection ... so need to discconect from router and connect to "W600_softAP" station
+        
+        
 with mu editor https://github.com/mu-editor/mu/releases/tag/1.1.0-alpha.2
 this did about alpha.2 ... i not understand how appear w600 in listing ... i download but not appear ... need to study this topic https://forum.micropython.org/viewtopic.php?t=8503
 
