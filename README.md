@@ -88,4 +88,25 @@ https://docs.micropython.org/en/v1.8.2/esp8266/esp8266/tutorial/filesystem.html
     
         -----------------------------------------------------------------
         
+If want write to main.py multilines (with https://bipes.net.br/aroca/web-serial-terminal/ ) in one command like 
+     
+       f=open('main.py','w')
+       f.write('print("1234") \r print("5678")')
+       f.close()
+       
+       use \r or maybe \r\n after any line same as example below
+        
+For exampme if you want write code in main.py that connect and create ftp server automatically same as this code 
 
+        import easyw600
+        easyw600.createap(ssid="W600_softAP")
+        import w600
+        w600.run_ftpserver(port=21,username="user",password="12345678")
+        
+you can write:
+
+        f.write('import easyw600 \r easyw600.createap(ssid="W600_softAP") \r import w600 \r w600.run_ftpserver(port=21,username="user",password="12345678")')
+        
+and will see  that working ... but how did is better if put \r\n how find in many examples      
+
+         
