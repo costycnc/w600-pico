@@ -32,8 +32,33 @@ https://docs.micropython.org/en/v1.8.2/esp8266/esp8266/tutorial/filesystem.html
         9 
         >>> f.close()
         
-        
-        >>> f = open('data.txt')
-        >>> f.read()
-        'some data'
+        --------------------------------------------------
+        >>> f=open('main.py','w')
+        >>> f.write('print("aaaa")')
+        13
         >>> f.close()
+        >>> f=open('main.py')
+        >>> f.read()
+        'print("aaaa")'
+         >>> 
+         
+         RESET
+    __            __
+    \ \    /\    / /
+     \ \  /  \  / /
+      \ \/ /\ \/ / 
+       \  /  \  /
+       / /\  / /\ 
+      / /\ \/ /\ \ 
+     / /  \  /  \ \ 
+    /_/    \/    \_\ 
+
+
+
+    WinnerMicro W600
+    aaaa
+    MicroPython v1.10-282-g6a9b3cb-dirty on 2019-09-17; WinnerMicro module with W600
+    Type "help()" for more information.
+        
+        
+
