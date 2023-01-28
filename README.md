@@ -13,6 +13,7 @@ vshymanskyy  Firmware upload tool for Winner Micro W600 & W601 WiFi  https://git
 
 
 https://docs.micropython.org/en/v1.8.2/esp8266/esp8266/tutorial/filesystem.html
+
         >>> import os
         >>> os.listdir()
         ['sys', 'lib', 'cert', 'boot.py', 'main.py', 'easyw600.py']
