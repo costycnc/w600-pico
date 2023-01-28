@@ -7,7 +7,7 @@
         import w600
         w600.run_ftpserver(port=21,username="user",password="12345678")
         
-        if not have a ftp you can usse dos command prompt >> ftp 192.168.1
+        if not have a ftp you can use dos command prompt >> ftp 192.168.43.1
         you see 
         C:\Users\costycnc>ftp 192.168.43.1
         Connected to 192.168.43.1.
