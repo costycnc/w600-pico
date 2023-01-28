@@ -6,8 +6,13 @@
         
         import w600
         w600.run_ftpserver(port=21,username="user",password="12345678")
-        time.sleep(1)
-        print( "port is 21, username is 'user', password is '12345678'")
+        
+        if not have a ftp you can usse dos command prompt >> ftp 192.168.1
+        you see 
+        C:\Users\costycnc>ftp 192.168.43.1
+        Connected to 192.168.43.1.
+        220-= welcome on W600 FTP server =-
+        220
         
 with mu editor https://github.com/mu-editor/mu/releases/tag/1.1.0-alpha.2
 this did about alpha.2 ... i not understand how appear w600 in listing ... i download but not appear ... need to study this topic https://forum.micropython.org/viewtopic.php?t=8503
