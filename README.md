@@ -17,3 +17,8 @@ https://docs.micropython.org/en/v1.8.2/esp8266/esp8266/tutorial/filesystem.html
         >>> import os
         >>> os.listdir()
         ['sys', 'lib', 'cert', 'boot.py', 'main.py', 'easyw600.py']
+        
+        >>> f = open('data.txt', 'w')
+        >>> f.write('some data')
+        9 
+        >>> f.close()
