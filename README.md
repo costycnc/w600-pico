@@ -1,14 +1,20 @@
 # w600-pico
-
-        Create access point
+       
+        You can use this terminal for write(comunicate) with w600-pico https://bipes.net.br/aroca/web-serial-terminal/ 
+        Connect with w600-pico under serial with 115200 bauds.
+        Create w600 access point
+        
         import easyw600
         easyw600.createap(ssid="W600_softAP")
+        (after send these two lines to w600-pico ... you can see on local network the "W600_softAP" station)
+        
+        create w600 ftp server 
         
         import w600
         w600.run_ftpserver(port=21,username="user",password="12345678")
         
-        if not have a ftp you can use dos command prompt >> ftp 192.168.43.1
-        you see 
+        after send these two lines if not have a ftp you can use dos command prompt >> ftp 192.168.43.1
+        you need to see 
         C:\Users\costycnc>ftp 192.168.43.1
         Connected to 192.168.43.1.
         220-= welcome on W600 FTP server =-
