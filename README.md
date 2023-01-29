@@ -1,6 +1,9 @@
 # w600-pico
 
-arduino http://arduino.w600.fun/package_w600_index.json  https://github.com/w600/arduino
+https://github.com/w600/arduino
+
+           arduino http://arduino.w600.fun/package_w600_index.json 
+
        
 You can use this terminal for write(comunicate) with w600-pico https://bipes.net.br/aroca/web-serial-terminal/ 
 
