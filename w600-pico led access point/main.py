@@ -1,19 +1,14 @@
 # based mainly on https://www.youtube.com/watch?v=GVMuER7A770
+#inspired from https://maker.pro/forums/threads/w600-pico-webserver.292684/
+
+
 from machine import Pin
-import network, gc
-import easyw600, w600
+import easyw600,w600
 
-# setup garbage collection
-gc.collect()
-
-print("Connecting to local WiFi") #debugging
-# connect to local WiFi network
-ssid = "My_Dark_Home_Network"
-password = "HartToTell"
-easyw600.connect(ssid, password)
-
-print("Connection successful")
-#print(sta.ifconfig())
+#create access point
+easyw600.createap(ssid="W600_softAP") 
+#create ftp server ( can be manipulate with dos ftp or the free ftp https://filezilla-project.org/
+w600.run_ftpserver(port=21,username="user",password="12345678") 
 
 # setup the webserver
 try:
