@@ -1,0 +1,59 @@
+{
+	"packages": [
+		{
+			"maintainer": "W600 Community",
+			"help": {
+				"online": "https://supports.winnermicro.com"
+			},
+			"websiteURL": "https://arduino.winnermicro.com/w600-arduino",
+			"email": "support@winnermicro.com",
+			"name": "w600",
+			"platforms": [
+				{
+					"category": "W600",
+					"help": {
+						"online": "https://arduino.winnermicro.com"
+					},
+					"url": "http://arduino.winnermicro.com/arduino/release/0.2.6/w600-arduino-0.2.6.zip",
+					"checksum": "SHA-256:0917227f835dcbb76cdf7f28929581214d06bf2b2f94c4f49262dcb4cdbacb78",
+					"name": "w600",
+					"version": "0.2.6",
+					"architecture": "w600",
+					"archiveFileName": "w600-arduino-0.2.6.zip",
+					"size": "28909081",
+					"toolsDependencies": [
+						{
+							"packager": "w600",
+							"version": "4_9-2015q1-20150306",
+							"name": "gcc-arm-none-eabi"
+						},
+						{
+							"packager": "w600",
+							"version": "0.3.2",
+							"name": "wmtools"
+						}
+					],
+					"boards": [
+						{ "name": "Generic W600 EV Module" },
+						{ "name": "WIO W600" }
+					]
+				}
+			],
+			"tools": [
+				{
+					"version": "0.3.2",
+					"name": "wmtools",
+					"systems": [
+						{
+							"url": "http://arduino.winnermicro.com/arduino/wmtools/0.3.2/wmtools-0.3.2.zip",
+							"checksum": "SHA-256:32119e37fcba6b67095284775143d216807052f31df27f8e0186236f94635760",
+							"host": "i686-mingw32",
+							"archiveFileName": "wmtools-0.3.2.zip",
+							"size": "6691645"
+						}
+					]
+				}
+			]
+		}
+	]
+}
