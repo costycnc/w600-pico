@@ -12,6 +12,8 @@ micropython firmware http://www.winnermicro.com/upload/1/editor/1568709203932.zi
 
 w600tool.py github --> https://github.com/vshymanskyy/w600tool
 
+------------------------------  W600TOOL.EXE ------------------------------------------------
+
 w600tool.exe github --> https://github.com/vshymanskyy/w600tool/releases/tag/0.1
 
 download direct --> w600tool.exe  https://github.com/vshymanskyy/w600tool/releases/download/0.1/w600tool.exe
