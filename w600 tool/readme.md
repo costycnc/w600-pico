@@ -16,3 +16,10 @@ w600tool.exe github --> https://github.com/vshymanskyy/w600tool/releases/tag/0.1
 
 download direct --> w600tool.exe  https://github.com/vshymanskyy/w600tool/releases/download/0.1/w600tool.exe
 
+       C:\.....\w600tool.exe -u "C:\.....\firmware.fls" 
+       the port is detected automatically
+       
+If main.py is in infinity loop add -e to renew flash default
+
+      C:\....\w600tool.exe -e -u "C:\......\firmware.fls" 
+
