@@ -1,9 +1,16 @@
 # w600-pico
 
-https://github.com/w600/arduino
+Another platforms
+
+Arduino     https://github.com/w600/arduino
 
            arduino http://arduino.w600.fun/package_w600_index.json 
+           
+PlatformIO   https://github.com/maxgerhardt/platform-w60x            
 
+---------------------------------------------------------------------------------------------
+
+Bellow how use preinstalled micropython
        
 You can use this terminal for write(comunicate) with w600-pico https://bipes.net.br/aroca/web-serial-terminal/ 
 
