@@ -77,9 +77,27 @@ Will opened a dos cmd windows with path in this folder
 
 write :
 
-    ftp 192.168.1.43
+    ftp 192.168.43.1
     
 the system will response with    
+
+       Connesso a 192.168.43.1
+       220-= welcome on W600 FTP server =-
+       220
+       502 Not Implemented.
+       Utente (192.168.43.1:(none)):
+       
+the server request user name ... so write  -->  user       and hit enter
+
+after server request password ... so write  --> 12345678   and hit enter
+
+if all is ok will receive
+
+       Utente (192.168.1.4:(none)): user
+       331 Password required for user
+       Password:
+       230 User logged in
+       ftp>
 
 
 the most important ftp commands:
