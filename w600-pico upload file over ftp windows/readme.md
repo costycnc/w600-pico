@@ -3,9 +3,9 @@ W600-pico upload files over ftp in windows command prompt
 Open online serial port monitor https://bipes.net.br/aroca/web-serial-terminal/ or another serial port monitor
 
 Connect w600-pico with pc over usb cable.
-
+[<img src="">](https://www.youtube.com/watch?v=bhKmkqbpgdc)
 Select 115200 speed and click connect.
-[bla]
+
 Select port and click connect.
 
 Once coneccted will see in terminal response of w600-pico micropython
