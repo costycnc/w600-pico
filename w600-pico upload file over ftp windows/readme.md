@@ -95,6 +95,17 @@ if all is ok will receive
        230 User logged in
        ftp>
 
+Now you can use ftp commands to download boot.py and main.py and write lines of code inside
+
+So ... if write in console --> get main.py  the file main.py will be downloaded in current folderand file will 
+
+Open main.py with notepad++ or another text editor and write some lines and save
+
+From console write --> put main.py   and file will be uploaded to w600.pico
+
+push reset button on w600-pico board or unplug and plug usb ... and program from main.py will be executed!
+
+
 
 the most important ftp commands:
 
