@@ -37,20 +37,30 @@ Set access point to connect with w600-pico directly - no router!!! ( after you c
 
 In serial terminal write (create an AP access point -- local )
 
-import easyw600
-easyw600.createap(ssid="W600_softAP")
+         import easyw600
 
 and hit Enter (send)
 
-
+         easyw600.createap(ssid="W600_softAP")
     
 and hit enter (send)
 
-
-
 The response will be 
 
-     softap working, ip is 192.168.43.1
+   >>> import easyw600                                                                                                                                   
+   >>> easyw600.createap(ssid="W600_softAP")                                                                                                             
+   softap working, ip is 192.168.43.1   
+
+Now create ftp server
+
+    import w600
+    
+and hit enter   
+
+    w600.run_ftpserver(port=21,username="user",password="12345678")
+    
+and hit enter    
+
      
 open any folder   (for example my documents) and write in address bar -->  cmd  
 
