@@ -122,6 +122,14 @@ you can write:
 
         f.write('import easyw600 \r easyw600.createap(ssid="W600_softAP") \r import w600 \r w600.run_ftpserver(port=21,username="user",password="12345678")')
         
-and will see  that working ... but how did is better if put \r\n how find in many examples      
+and will see  that working ... but how did is better if put \r\n how find in many examples     
+
+---------------------------------------------------------------------------------------------------------
+
+another sdk for testing  https://www.keil.com/demo/eval/arm.htm#!#DOWNLOAD
+
+https://docs.wiznet.io/img/products/wizfi360/board/wizfi360sdk/wizfi360_w600_sdk_guide_v0.0.1_e.pdf
+
+https://docs.wiznet.io/Product/Wi-Fi-Module/WizFi360/Other-Resource/w600_sdk
 
          
