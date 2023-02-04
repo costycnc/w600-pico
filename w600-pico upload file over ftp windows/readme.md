@@ -46,9 +46,7 @@ and hit Enter (send)
 and hit enter (send)
 
 The response will be 
-
-   >>> import easyw600                                                                                                                                   
-   >>> easyw600.createap(ssid="W600_softAP")                                                                                                             
+                                                                                                            
    softap working, ip is 192.168.43.1   
 
 Now create ftp server
