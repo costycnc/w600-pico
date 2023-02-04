@@ -8,15 +8,45 @@ Select 115200 speed and click connect.
 
 Select port and click connect.
 
-In serial terminal write 
+Once coneccted will see in terminal response of w600-pico micropython
 
-    import easyw600
+           \ \  /  \  / /                                                                                                                                   
+            \ \/ /\ \/ /                                                                                                                                    
+             \  /  \  /                                                                                                                                     
+             / /\  / /\                                                                                                                                     
+            / /\ \/ /\ \                                                                                                                                    
+           / /  \  /  \ \                                                                                                                                   
+          /_/    \/    \_\                                                                                                                                  
+       Traceback (most recent call last):                                                                                                                    
+        File "boot.py", line 1, in <module>                                                                                                                 
+       NameError: name         '�� ' isn't defined                                                                                                                          Traceback (most recent call last):                                                                                                                    
+       File "main.py", line 1, in <module>                                                                                                                 
+       NameError: name '����������������������������������' isn't defined                                                                                    
+       MicroPython v1.10-282-g6a9b3cb-dirty on 2019-09-17; WinnerMicro module with W600                                                                      
+       Type "help()" for more information.  
+       
+Receive some errors because files boot.py   and main.py is empty    
+
+Now you can send commands manually to w600-pico.
+
+Here https://www.wemos.cc/en/latest/tutorials/w600/get_started_with_micropython_w600.html  some examples from official sites.
+
+Next step is to set a access point and ftp server with only 4 lines of code !!!! after you cand send and receive files from w600-pico over ftp
+
+Set access point to connect with w600-pico directly - no router!!! ( after you can write boot.py and main.py and send over ftp to connect to router)
+
+In serial terminal write (create an AP access point -- local )
+
+import easyw600
+easyw600.createap(ssid="W600_softAP")
 
 and hit Enter (send)
 
-    easyw600.createap(ssid="W600_softAP")
+
     
 and hit enter (send)
+
+
 
 The response will be 
 
