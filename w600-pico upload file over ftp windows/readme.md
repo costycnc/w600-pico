@@ -59,10 +59,19 @@ and hit enter
 
     w600.run_ftpserver(port=21,username="user",password="12345678")
     
-and hit enter    
+and hit enter  
 
+The response will be
+
+      >>> import easyw600                                                                                                                                   
+      >>> easyw600.createap(ssid="W600_softAP")                                                                                                             
+      softap working, ip is 192.168.43.1
+      
+Now you have an access point ip 192.148.43.1 where working a ftp server on port 21 
+
+Now need to prepare a folder where put and download files from or on w600-pico
      
-open any folder   (for example my documents) and write in address bar -->  cmd  
+Open any folder   (for example my documents) and write in address bar -->  cmd  
 
 Will opened a dos cmd windows with path in this folder
 
