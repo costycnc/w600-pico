@@ -2,7 +2,7 @@ W600-pico upload files over ftp in windows command prompt
 
 Open online serial port monitor https://bipes.net.br/aroca/web-serial-terminal/ or another serial port monitor
 
-![alt text]<https://github.com/costycnc/costycnc-inkscape-plugin-hello-world/blob/master/extension.jpg)>(https://www.youtube.com/watch?v=UqfS2BkoYnY)
+![alt text][<https://github.com/costycnc/costycnc-inkscape-plugin-hello-world/blob/master/extension.jpg)>](https://www.youtube.com/watch?v=UqfS2BkoYnY)
 
 Connect w600-pico with pc over usb cable.
 
