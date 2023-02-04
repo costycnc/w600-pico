@@ -3,7 +3,7 @@ W600-pico upload files over ftp in windows command prompt
 Open online serial port monitor https://bipes.net.br/aroca/web-serial-terminal/ or another serial port monitor
 
 Connect w600-pico with pc over usb cable.
-[<img src="https://github.com/costycnc/w600-pico-micropython/blob/main/w600-pico%20upload%20file%20over%20ftp%20windows/foto/costycnc-foam-cutter.jpg?raw=true">](https://www.youtube.com/watch?v=bhKmkqbpgdc)
+
 Select 115200 speed and click connect.
 
 Select port and click connect.
@@ -115,3 +115,5 @@ the most important ftp commands:
          bye	--> Exits from FTP.
 
 All ftp commands here https://www.serv-u.com/ftp-server-windows/commands (i dont know if all commands is implemented!) 
+
+[<img src="https://github.com/costycnc/w600-pico-micropython/blob/main/w600-pico%20upload%20file%20over%20ftp%20windows/foto/costycnc-foam-cutter.jpg?raw=true">](https://www.youtube.com/watch?v=UqfS2BkoYnY)
