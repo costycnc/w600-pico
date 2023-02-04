@@ -62,9 +62,7 @@ and hit enter
 and hit enter  
 
 The response will be
-
-      >>> import easyw600                                                                                                                                   
-      >>> easyw600.createap(ssid="W600_softAP")                                                                                                             
+                                                                                                            
       softap working, ip is 192.168.43.1
       
 Now you have an access point ip 192.148.43.1 where working a ftp server on port 21 
