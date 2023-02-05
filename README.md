@@ -8,7 +8,7 @@ Arduino     https://github.com/w600/arduino
            
 PlatformIO   https://github.com/maxgerhardt/platform-w60x            
 
---
+---
 
 Bellow how use preinstalled micropython
        
