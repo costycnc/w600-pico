@@ -10,6 +10,10 @@ PlatformIO   https://github.com/maxgerhardt/platform-w60x
 
 ---
 
+MicroPython Documentation Release 1.10 https://docs.micropython.org/en/v1.10/micropython-docs.pdf
+
+---
+
 Bellow how use preinstalled micropython
        
 You can use this terminal for write(comunicate) with w600-pico https://bipes.net.br/aroca/web-serial-terminal/ 
