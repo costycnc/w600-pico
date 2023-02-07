@@ -1,4 +1,11 @@
 </textarea>
-
+<script>
+function loadXMLDoc() {
+  var xhttp = new XMLHttpRequest();
+  var value=document.getElementById("costy").value;
+  xhttp.open("POST", "test", true);
+  xhttp.send("costycnc"+value);
+  }
+</script>
 </body>
 </html>

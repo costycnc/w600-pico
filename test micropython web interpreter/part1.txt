@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
 <body>
+<h2>Using the XMLHttpRequest Object</h2>
 
-<textarea id="w3review" name="w3review" rows="20" cols="50">
+<div id="demo"></div>
+<button type="button" onclick="loadXMLDoc()">Change Content</button>
+<textarea id="costy" name="text" rows="20" cols="50">

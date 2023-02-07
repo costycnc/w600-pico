@@ -1,5 +1,8 @@
-    if "/main" in request:
-        file = open("main.py", "r")
-        main = file.read()
-        file.close()
-        response=part1+main+part2
+    if "/ledon" in request:
+        led = Pin(Pin.PA_00, Pin.OUT, Pin.PULL_FLOATING)
+        led.value(0) 
+    if "/ledoff" in request:
+        led = Pin(Pin.PA_00, Pin.OUT, Pin.PULL_FLOATING)
+        led.value(1) 
+		
+	

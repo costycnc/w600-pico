@@ -1,4 +1,5 @@
 import socket
+from machine import Pin
 		
 s = socket.socket()
 s.bind(('',80))
@@ -21,17 +22,31 @@ file.close()
 
 while True:
     conn, addr = s.accept() 
-    request = conn.recv(25)
+    request = conn.recv(2500).decode()
     print(request)
-    response=main1+main2+main3
+    response="hello world"	
     if "/main" in request:
-        file = open("main.py", "r")
-        main = file.read()
+        response=part1+main2+part2
+    if "/test" in request:
+        tmp=request.split("costycnc")[1]
+        file = open("main2.txt", "w")
+        file.write(tmp)
         file.close()
-        response=part1+main+part2
+        file = open("main.py", "w")
+        file.write(main1+tmp+main2)
+        file.close()
+        print(tmp)
+    if "/ledon" in request:
+        led = Pin(Pin.PA_00, Pin.OUT, Pin.PULL_FLOATING)
+        led.value(0) 
+    if "/ledoff" in request:
+        led = Pin(Pin.PA_00, Pin.OUT, Pin.PULL_FLOATING)
+        led.value(1) 
+		
     conn.send("HTTP/1.1 200 ok\n")
     conn.send("Content-type: text /html\n")		
     conn.send("Connection: close\n\n")		
     conn.sendall(response)	
     conn.close()
-    
+		
+	
