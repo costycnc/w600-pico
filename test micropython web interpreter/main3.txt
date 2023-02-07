@@ -1,0 +1,6 @@
+    conn.send("HTTP/1.1 200 ok\n")
+    conn.send("Content-type: text /html\n")		
+    conn.send("Connection: close\n\n")		
+    conn.sendall(response)	
+    conn.close()
+    

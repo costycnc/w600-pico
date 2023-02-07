@@ -9,12 +9,21 @@ file.close()
 file = open("part2.txt", "r")
 part2 = file.read()
 file.close()
+file = open("main1.txt", "r")
+main1 = file.read()
+file.close()
+file = open("main2.txt", "r")
+main2 = file.read()
+file.close()
+file = open("main3.txt", "r")
+main3 = file.read()
+file.close()
 
 while True:
     conn, addr = s.accept() 
     request = conn.recv(25)
     print(request)
-    response="hello world"	
+    response=main1+main2+main3
     if "/main" in request:
         file = open("main.py", "r")
         main = file.read()

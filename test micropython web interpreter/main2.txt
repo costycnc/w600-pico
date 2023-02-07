@@ -1,0 +1,5 @@
+    if "/main" in request:
+        file = open("main.py", "r")
+        main = file.read()
+        file.close()
+        response=part1+main+part2
