@@ -1,0 +1,79 @@
+
+import socket
+from machine import Pin
+
+def web_page():
+    file = open("index.html", "r")
+    page = file.read()
+    file.close()
+    return page
+	
+def urldecode(str):
+    dic = {"%3C":"<","%3E":">","%0D":"\r","%0A":"\n","+":" ","%21":"!","%22":'"',"%23":"#","%24":"$","%26":"&","%27":"'","%28":"(","%29":")","%2A":"*","%2B":"+","%2C":",","%2F":"/","%3A":":","%3B":";","%3D":"=","%3F":"?","%40":"@","%5B":"[","%5D":"]","%7B":"{","%7D":"}"}
+    for k,v in dic.items(): str=str.replace(k,v)
+    return str	
+	
+#result=web_page()
+s = socket.socket()
+s.bind(('',80))
+s.listen(5)
+
+while True:
+    conn, addr = s.accept() 
+    request = conn.recv(1024)
+    print(request.decode("ascii")) 	
+    request1 = request.decode()
+    #x = request1.split(" ")[2]		
+    #costycnc
+    #cost1
+    if "/ledon" in request:
+        led = Pin(Pin.PB_13, Pin.OUT, Pin.PULL_FLOATING)
+        led.value(0) 
+    #cost1
+	#costycnc	
+    if "POST /test" in request:		
+        print(request)		
+        file = open("request.html", "r")				
+        conn.send("HTTP/1.1 200 ok\n")
+        conn.send("Content-type: text /html\n")
+        conn.send("Connection: close\n\n")		
+        conn.sendall(file.read())				
+        file.close()	
+    if "GET /test" in request:		
+        file = open("main.py", "r")				
+        conn.send("HTTP/1.1 200 ok\n")
+        conn.send("Content-type: text /html\n")
+        conn.send("Connection: close\n\n")		
+        conn.sendall(file.read())				
+        file.close()	
+    if "GET /request" in request:		
+        file = open("request.html", "r")				
+        conn.send("HTTP/1.1 200 ok\n")
+        conn.send("Content-type: text /html\n")
+        conn.send("Connection: close\n\n")		
+        conn.sendall(file.read())				
+        file.close()	
+    if "GET /read" in request:
+        request2=urldecode(request1)
+        request3=request2.split("cost1")[1]
+        print(request3)
+        file = open("costycnc.txt", "w")
+        file.write(request3)
+        file.close()
+        file = open("myfile.txt", "r")
+        content=file.read().split("costycnc")
+        file.close()		
+        file = open("main.py", "r")		
+        content1=file.read().split("#costycnc")[1]		
+        conn.send("HTTP/1.1 200 ok\n")
+        conn.send("Content-type: text /html\n")
+        conn.send("Connection: close\n\n")
+        conn.sendall(content[0])		
+        conn.sendall(content1)		
+        conn.sendall(content[1])		
+        file.close()	
+		
+    #sleep(1)
+    conn.send("Connection: close\n\n")
+    conn.close()
+    
