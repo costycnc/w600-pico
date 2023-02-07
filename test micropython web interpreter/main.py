@@ -9,12 +9,12 @@ file.close()
 file = open("part2.txt", "r")
 part2 = file.read()
 file.close()
-response="hello world"
 
 while True:
     conn, addr = s.accept() 
     request = conn.recv(25)
-    print(request)	
+    print(request)
+    response="hello world"	
     if "/main" in request:
         file = open("main.py", "r")
         main = file.read()
