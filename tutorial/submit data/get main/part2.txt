@@ -1,0 +1,10 @@
+</textarea>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "costy".</p>
+
+</body>
+</html>
