@@ -55,6 +55,7 @@ this did about alpha.2 ... i not understand how appear w600 in listing ... i dow
 also a good tutorial https://www.sigmdel.ca/michel/ha/w600/first_look_w600_en.html
 
 > vshymanskyy  Firmware upload tool for Winner Micro W600 & W601 WiFi  https://github.com/vshymanskyy/w600tool
+> 
 > windows executable https://github.com/vshymanskyy/w600tool/releases/tag/0.1
 
 
