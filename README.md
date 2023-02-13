@@ -1,4 +1,4 @@
-# w600-pico micropython costycnc
+# w600-pico micropython official
 
 Another platforms
 
