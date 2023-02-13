@@ -24,7 +24,7 @@ Paste in terminal with ctrl+A+V
     easyw600.createap(ssid="W600_softAP")        
     import w600
     w600.run_ftpserver(port=21,username="user",password="12345678")
-   
+    
         
 after send these four lines if not have a ftp you can use dos command prompt >> ftp 192.168.43.1
 
