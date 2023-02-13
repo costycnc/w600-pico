@@ -20,7 +20,7 @@ You can use this terminal for write(comunicate) with w600-pico https://bipes.net
 
 Paste in terminal with ctrl+A+V
         
- import easyw600
+  import easyw600
         easyw600.createap(ssid="W600_softAP")        
         import w600
         w600.run_ftpserver(port=21,username="user",password="12345678")
