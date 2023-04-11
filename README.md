@@ -1,5 +1,7 @@
 # w600-pico micropython official
 
+I find micropython source code here https://github.com/robert-hh/Micropython-Editor
+
 Official store https://www.wemos.cc/en/latest/w600/index.html
 
 Another platforms
