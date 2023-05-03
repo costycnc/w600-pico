@@ -60,9 +60,16 @@ also a good tutorial https://www.sigmdel.ca/michel/ha/w600/first_look_w600_en.ht
 
 https://docs.micropython.org/en/v1.8.2/esp8266/esp8266/tutorial/filesystem.html
 
-           import gc
-           gc.collect()
-           gc.mem_free()
+           >>> w600.flash_size()                                                                                                                                 
+           1048576 
+
+           >>> import gc                                                                                                                                         
+           >>> gc.mem_free()                                                                                                                                     
+           44160                                                                                                                                                 
+           >>> gc.collect()                                                                                                                                      
+           >>> gc.mem_free()                                                                                                                                     
+           44768                                                                                                                                                 
+           >>>     
 
         >>> import os
         >>> os.listdir()
